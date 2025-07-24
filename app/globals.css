@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply h-full;
+  }
+  
+  body {
+    @apply h-full bg-gray-50;
+  }
+}
+
+@layer components {
+  .chat-message {
+    @apply mb-4 p-3 rounded-lg max-w-4xl;
+  }
+  
+  .user-message {
+    @apply bg-blue-500 text-white ml-auto;
+  }
+  
+  .assistant-message {
+    @apply bg-white border shadow-sm;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center w-full px-3 py-2 text-sm rounded-md hover:bg-gray-100 transition-colors;
+  }
+  
+  .sidebar-item.active {
+    @apply bg-blue-100 text-blue-700;
+  }
+}
